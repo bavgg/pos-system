@@ -1,1 +1,205 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* colors */
+:root {
+  --grey-50: #f7fafc;
+  --grey-100: #374557;
+  --grey-200: #464e5f;
+  --grey-300: #f9fafb;
+  --grey-400: #a098ae;
+  --grey-500: #96a5b8;
+  --grey-600: #374557;
+  --grey-700: #c3d3e2;
+  --grey-800: #425166;
+  --grey-900: #444a6d;
+  --grey-A100: #edf2f6;
+  --grey-A200: #7b91b0;
+  --grey-A400: #eff1f3;
+  --grey-A700: #ececec;
+
+  --indigo-50: #737791;
+  --indigo-200: #4079ed;
+  --indigo-300: #3f51b5;
+  --indigo-500: #5d5fef;
+  --indigo-600: #0f3659;
+  --indigo-700: #05004e;
+  --indigo-900: #151d48;
+
+  --blue-50: #b3e5fc;
+  --blue-300: #6993ff;
+  --blue-500: #0095ff;
+
+  --purple-50: #f3e8ff;
+  --purple-300: #8950fc;
+  --purple-500: #bf83ff;
+  --purple-700: #884dff;
+  --purple-900: #a700ff;
+
+  --red-50: #ffe2e5;
+  --red-300: #eb5757;
+  --red-500: #fa5a7d;
+  --red-700: #ff947a;
+  --red-800: #f64e60;
+  --red-900: #ef4444;
+
+  --orange-50: #fff4de;
+  --orange-300: #fffaf1;
+  --orange-400: #ffa800;
+  --orange-500: #ffa412;
+  --orange-700: #ff8f0d;
+  --orange-900: #ffa800;
+
+  --green-50: #dcfce7;
+  --green-100: #e2fff3;
+  --green-200: #27ae60;
+  --green-300: #4ab58e;
+  --green-400: #00ab9a;
+  --green-500: #00e096;
+  --green-600: #0bb783;
+  --green-700: #07e098;
+  --green-900: #3cd856;
+
+  --yellow-500: #ffcf00;
+}
+
+/* Palette */
+:root {
+  --text-primary: var(--indigo-600);
+  --text-secondary: var(--indigo-200);
+
+  --action-hover: var(--indigo-300);
+  --action-selected: var(--indigo-500);
+
+  --neutral-lighter: var(--grey-50);
+  --neutral-light: var(--grey-300);
+  --neutral-main: var(--grey-500);
+  --neutral-dark: var(--grey-700);
+  --neutral-darker: var(--grey-900);
+  --neutral-contrastText: #fff;
+
+  --primary-lighter: var(--indigo-50);
+  --primary-light: var(--indigo-300);
+  --primary-main: var(--indigo-500);
+  --primary-dark: var(--indigo-700);
+  --primary-darker: var(--indigo-900);
+
+  --secondary-lighter: var(--purple-50);
+  --secondary-light: var(--purple-300);
+  --secondary-main: var(--purple-500);
+  --secondary-dark: var(--purple-700);
+  --secondary-darker: var(--purple-900);
+
+  --error-lighter: var(--red-50);
+  --error-light: var(--red-300);
+  --error-main: var(--red-500);
+  --error-dark: var(--red-700);
+  --error-darker: var(--red-900);
+
+  --warning-lighter: var(--orange-50);
+  --warning-light: var(--orange-300);
+  --warning-main: var(--orange-500);
+  --warning-dark: var(--orange-700);
+  --warning-darker: var(--orange-900);
+
+  --success-lighter: var(--green-50);
+  --success-light: var(--green-300);
+  --success-main: var(--green-500);
+  --success-dark: var(--green-700);
+  --success-darker: var(--green-900);
+
+  --info-lighter: var(--blue-50);
+  --info-light: var(--blue-300);
+  --info-main: var(--blue-500);
+
+  --green-light: var(--green-100);
+  --green-main: var(--green-200);
+  --green-dark: var(--green-400);
+  --green-darker: var(--green-600);
+
+  --orange-main: var(--orange-400);
+
+  --red-main: var(--red-800);
+
+  --yellow-main: var(--yellow-500);
+}
+
+/* Typography */
+:root {
+  --font-family: "Poppins", "Open Sans", "Epilogue", sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.25rem; /* 36px */
+  line-height: 1.4; /* 50.4px */
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.875rem; /* 30px */
+  line-height: 1.5; /* 45px */
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.33; /* 32px */
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.6; /* 32px */
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.5; /* 27px */
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5; /* 24px */
+}
+
+.subtitle1 {
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+  line-height: 1.875; /* 30px */
+}
+
+.subtitle2 {
+  font-weight: 400;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.42; /* 20px */
+}
+
+.body1 {
+  font-weight: 500;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5; /* 24px */
+  font-family: "Poppins";
+}
+
+.body2 {
+  font-weight: 400;
+  font-size: 0.8125rem; /* 13px */
+  line-height: 1.2307; /* 16px */
+  font-family: "Open Sans";
+}
+
+.caption {
+  font-weight: 500;
+  font-size: 0.75rem; /* 12px */
+  line-height: 1.33; /* 16px */
+}
+
+.button {
+  text-transform: none;
+  font-family: "Epilogue";
+  font-weight: 500;
+  font-size: 0.75rem; /* 12px */
+  line-height: 1.025; /* 12.3px */
+}
