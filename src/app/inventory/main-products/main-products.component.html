@@ -1,0 +1,66 @@
+<div>
+  <h1>Product List</h1>
+  <p>Display all products.</p>
+
+
+  <div class="bg-white rounded-xl">
+
+    <!-- header -->
+    <div class="flex items-center justify-between">
+      <div class="flex gap-2 items-center">
+        <div class="rounded-full border w-fit p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
+        </div>
+
+        <div class="relative  border min-w-8 max-w-[300px]  rounded-3xl p-2">
+          <input placeholder="Search..." class=" outline-none ml-3 h-full  ">
+          <div class="absolute top-[1px] right-[1px] rounded-full w-fit p-2 items-center bg-yellow-100">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-1 border rounded-3xl p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+        <p>Download</p>
+      </div>
+    </div>
+
+    <!-- table -->
+     <app-table></app-table>
+    <!-- <div class="p-4 ">
+      <div class="grid grid-cols-9 border-x">
+        @for(thead of theads; track thead; let isLast = $last) {
+          
+          <div class="border-r border-b p-1">field</div>
+        }
+      
+      
+      </div>
+      
+      <div class="grid grid-cols-9 border-x border-t">
+        <h6 class="border-r border-b p-1"></h6>
+        <h6 class="border-r border-b p-1"></h6>
+        <h6 class="border-r border-b p-1">Name</h6>
+        <h6 class="border-r border-b p-1">Type</h6>
+        <h6 class="border-r border-b p-1">SKU</h6>
+        <h6 class="border-r border-b p-1">Category</h6>
+        <h6 class="border-r border-b p-1">Status</h6>
+        <h6 class="border-r border-b p-1">Author</h6>
+        <h6 class="border-b p-1">Date</h6>
+
+        
+      </div>
+      <app-table-row></app-table-row>
+    </div> -->
+
+    <!-- footer -->
+     <div class="flex justify-between items-center">
+
+
+      <app-select></app-select>
+      <app-nav-arrows></app-nav-arrows>
+      
+     </div>
+  </div>
+</div>

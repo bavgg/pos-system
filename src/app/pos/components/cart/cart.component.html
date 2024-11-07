@@ -1,29 +1,72 @@
 <div>
   <!-- menu tab -->
-   <div class="flex gap-16 border border-[var(--neutral-light)]">
+  <div class="flex gap-7 border border-[var(--neutral-light)]">
     <app-menu-item [title]="'Comments'"></app-menu-item>
     <app-menu-item [title]="'Taxes'"></app-menu-item>
     <app-menu-item [title]="'Coupons'"></app-menu-item>
     <app-menu-item [title]="'Settings'"></app-menu-item>
-   </div>
-
+  </div>
+  
   <!-- table -->
-   <div class=" border" >
-      <!-- table header -->
-      <!-- <app-table-row class="grid grid-cols-[66%,17%,17%]"></app-table-row> -->
+  <div class="border">
+    <!-- table header -->
+    <div class="grid grid-cols-[66%,17%,17%]">
+      <h6 class="border-r border-b">Product</h6>
+      <h6 class="border-r border-b">Quantity</h6>
+      <h6 class="border-b">Total</h6>
+    </div>
+  
+    <!-- table body -->
+    <app-table-row
+      class="grid grid-cols-[66%,17%,17%]"
+      [title]="'Test'"
+      [price_amount]="'23'"
+      [discount_percent]="'32'"
+      [discount_amount]="'23'"
+      [quantity]="'quantity'"
+      [total]="'30'"
+    >
+      <!-- icon -->
+      <svg
+        ngProjectAs="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#5f6368"
+      >
+        <path
+          d="M267.33-120q-27.5 0-47.08-19.58-19.58-19.59-19.58-47.09V-740H160v-66.67h192V-840h256v33.33h192V-740h-40.67v553.33q0 27-19.83 46.84Q719.67-120 692.67-120H267.33Zm425.34-620H267.33v553.33h425.34V-740Zm-328 469.33h66.66v-386h-66.66v386Zm164 0h66.66v-386h-66.66v386ZM267.33-740v553.33V-740Z"
+        />
+      </svg>
+    </app-table-row>
+  </div>
+</div>
 
-
-      <!-- table body -->
-      <app-table-row   class="grid grid-cols-[66%,17%,17%]" [title]="'Test'" [price_amount]="'23'" [discount_percent]="'32'" [discount_amount]="'23'" [quantity]="'quantity'" [total]="'30'">
-        <!-- icon -->
-        <svg ngProjectAs="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M267.33-120q-27.5 0-47.08-19.58-19.58-19.59-19.58-47.09V-740H160v-66.67h192V-840h256v33.33h192V-740h-40.67v553.33q0 27-19.83 46.84Q719.67-120 692.67-120H267.33Zm425.34-620H267.33v553.33h425.34V-740Zm-328 469.33h66.66v-386h-66.66v386Zm164 0h66.66v-386h-66.66v386ZM267.33-740v553.33V-740Z"/></svg>
-      </app-table-row>
-      
+<div>
 
   
-   </div>
-
   <!-- compute -->
-
+   <app-compute [t1]="'Customer: N/A'" [t2]="'Sub Total'" [t3]="'USD0.00'"></app-compute>
+   <app-compute [t1]="'Type: N/A'" [t2]="'Discount'" [t3]="'USD0.00'"></app-compute>
+   <app-compute [t1]="''" [t2]="'Total'" [t3]="'USD0.00'"></app-compute>
+   
   <!-- buttons -->
+   <div class="grid grid-cols-4">
+      <app-cart-button [title]="'Pay'" class="flex gap-2 items-center bg-red-50">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm440 240H120q-33 0-56.5-23.5T40-240v-440h80v440h680v80ZM280-400v-320 320Z"/></svg>
+      </app-cart-button>
+  
+      <app-cart-button [title]="'Hold'" class="flex gap-2 items-center bg-blue-50">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M520-200v-560h240v560H520Zm-320 0v-560h240v560H200Zm400-80h80v-400h-80v400Zm-320 0h80v-400h-80v400Zm0-400v400-400Zm320 0v400-400Z"/></svg>
+      </app-cart-button>
+  
+      <app-cart-button [title]="'Discount'" class="flex gap-2 items-center bg-green-50">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M300-520q-58 0-99-41t-41-99q0-58 41-99t99-41q58 0 99 41t41 99q0 58-41 99t-99 41Zm0-80q25 0 42.5-17.5T360-660q0-25-17.5-42.5T300-720q-25 0-42.5 17.5T240-660q0 25 17.5 42.5T300-600Zm360 440q-58 0-99-41t-41-99q0-58 41-99t99-41q58 0 99 41t41 99q0 58-41 99t-99 41Zm0-80q25 0 42.5-17.5T720-300q0-25-17.5-42.5T660-360q-25 0-42.5 17.5T600-300q0 25 17.5 42.5T660-240Zm-444 80-56-56 584-584 56 56-584 584Z"/></svg>
+      </app-cart-button>
+  
+      <app-cart-button [title]="'Void'" class="flex gap-2 items-center bg-yellow-50">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+      </app-cart-button>
+   </div>
 </div>

@@ -9,6 +9,8 @@ export class StateService {
   
   selectedLink = signal<string>("Dashboard");
 
+  toggleMenuIsOpen = signal<boolean>(true);
+
   setSelectedLink() {
     
   }

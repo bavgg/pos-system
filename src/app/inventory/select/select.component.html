@@ -1,0 +1,18 @@
+<div   class="border relative flex py-2 px-2 pl-4 rounded-3xl w-[300px]">
+  <!-- <select (click)="onClick($event)" class="bg-white w-full">
+    <option class="bg-red-400 p-4">Bulk Actions</option>
+  </select> -->
+
+  <div (click)="onClick()" class="flex w-full items-center justify-between">
+    <p>Bulk Actions</p>
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+  </div>
+
+  <!-- custom option -->
+  <div  [ngClass]="this.stateService.optionIsOpen() ? 'open': 'closed'" class=" shadow-md w-full hidden border max-w-[250px] left-0 rounded-lg p-1 flex-col whitespace-nowrap absolute bg-white">
+    <app-option-list [title]="'Bulk Actions'"></app-option-list>
+    <app-option-list [title]="'Bulk Actions'"></app-option-list>
+  </div>
+
+  <p class="p-2 py-1 rounded-3xl border">Apply</p>
+</div>

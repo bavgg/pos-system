@@ -1,0 +1,13 @@
+<div class="p-4 ">
+  <div [ngClass]="'grid-cols-' + tnum" class="grid border-x border-t">
+    @for(thead of theads; track thead; let isLast = $last) {
+      
+      <h6 class="border-r border-b p-1">{{thead}}</h6>
+    }
+  
+  
+  </div>
+  
+
+  <app-table-row></app-table-row>
+</div>

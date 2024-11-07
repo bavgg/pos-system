@@ -1,0 +1,11 @@
+<a class=" cursor-pointer this flex gap-4 items-center px-4 py-2 rounded-xl">
+  <ng-content select="main-icon"></ng-content>
+  <p class="pthis">{{ title }}</p>
+  <ng-content select="chevron"></ng-content>
+</a>
+
+<div class="mb-3"></div>
+
+<app-sidebar-sublink [title]="'Products'"></app-sidebar-sublink>
+<div class="mb-1"></div>
+<app-sidebar-sublink [title]="'Create Product'"></app-sidebar-sublink>
