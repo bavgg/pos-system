@@ -6,7 +6,7 @@ import { DB } from "https://deno.land/x/sqlite/mod.ts";
 
 export function connectDB(): DB {
   const homeDir = os.homedir();
-  const sqlDir = path.join(homeDir, 'sql/db/psos.db');
+  const sqlDir = path.join(homeDir, 'sql/db/pos.db');
 
   if (!fs.existsSync(sqlDir)) {
     fs.mkdirSync(homeDir, {recursive: true});

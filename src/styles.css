@@ -1,4 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* https://themewagon.github.io/dabang/ */
 
 /* colors */
 :root {
@@ -128,7 +132,7 @@
   --font-family: "Poppins", "Open Sans", "Epilogue", sans-serif;
 }
 
-h1 {
+.h1 {
   font-weight: 600;
   font-size: 2.25rem; /* 36px */
   line-height: 1.4; /* 50.4px */
@@ -140,25 +144,25 @@ h2 {
   line-height: 1.5; /* 45px */
 }
 
-h3 {
+.h3 {
   font-weight: 600;
   font-size: 1.5rem; /* 24px */
   line-height: 1.33; /* 32px */
 }
 
-h4 {
+.h4 {
   font-weight: 600;
   font-size: 1.25rem; /* 20px */
   line-height: 1.6; /* 32px */
 }
 
-h5 {
+.h5 {
   font-weight: 600;
   font-size: 1.125rem; /* 18px */
   line-height: 1.5; /* 27px */
 }
 
-h6 {
+.h6 {
   font-weight: 500;
   font-size: 1rem; /* 16px */
   line-height: 1.5; /* 24px */
@@ -202,4 +206,13 @@ h6 {
   font-weight: 500;
   font-size: 0.75rem; /* 12px */
   line-height: 1.025; /* 12.3px */
+}
+
+/* base */
+*, body, html {
+
+  font-weight: 300;
+  font-size: 18px;
+  font-family: "Poppins";
+  color: var(--indigo-600);
 }

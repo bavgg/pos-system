@@ -1,0 +1,28 @@
+.pthis {
+  font-weight: 300;
+  font-size: 18px;
+  font-family: "Poppins";
+}
+
+.this:hover {
+  background-color: var(--indigo-300);
+
+  & p {
+    color: #fff;
+  }
+}
+
+.this:hover ::ng-deep svg {
+  fill: white;
+}
+
+.selected {
+  background-color: var(--indigo-500);
+  & .pthis {
+    color: white;
+  }
+
+  & ::ng-deep svg {
+    fill: white;
+  }
+}

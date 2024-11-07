@@ -1,0 +1,4 @@
+<a (click)="onClick()" [ngClass]="{'selected': this.stateService.selectedLink() === title }" class=" cursor-pointer this flex gap-4 items-center px-4 py-2 rounded-xl">
+  <ng-content></ng-content>
+  <p class="pthis">{{ title }}</p>
+</a>

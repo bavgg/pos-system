@@ -1,0 +1,16 @@
+<div class="border-r border-b">
+  <!-- title -->
+  <div class="flex justify-between">
+    <p>M2 Macbook Air 13 inch — Piece</p>
+    <ng-content select="icon"></ng-content>
+  </div>
+
+  <!-- price -->
+   <div>
+    <p>Price: USD<span>{{ price_amount }}</span></p>
+    <p>Discount <span>{{ discount_percent }}</span>: USD<span>{{ discount_amount }}</span></p>
+   </div>
+
+</div>
+<div class="border-r border-b">{{ quantity }}</div>
+<div class="border-b">{{ total }}</div>
